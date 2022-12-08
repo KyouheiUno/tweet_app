@@ -12,7 +12,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     //配列でダミーデータを設定する
-    let fakeDate = ["ダミーデータその1", "ダミーデータその2", "ダミーデータその3", "ダミーデータその4", "ダミーデータその5", "ダミーデータその6", "ダミーデータその7"]
+    let fakeDate = ["ダミーデータその1", "ダミーデータその2", "ダミーデータその3", "ダミーデータその4", "ダミーデータその5", "ダミーデータその6", "ダミーデータその7ダミーデータその7ダミーデータその7ダミーデータその7ダミーデータその7ダミーデータその7"]
     
     override func viewDidLoad() {
         tableView.dataSource = self
@@ -25,6 +25,9 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
+        cell.textLabel!.text = fakeDate[indexPath.row]
+        cell.textLabel!.numberOfLines = 0 //0に設定
+        return cell
     }
 }
