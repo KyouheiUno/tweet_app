@@ -10,6 +10,10 @@ import UIKit
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    
+    //配列でダミーデータを設定する
+    let fakeDate = ["ダミーデータその1", "ダミーデータその2", "ダミーデータその3", "ダミーデータその4", "ダミーデータその5", "ダミーデータその6", "ダミーデータその7"]
+    
     override func viewDidLoad() {
         tableView.dataSource = self
     }
@@ -17,7 +21,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10 //この箇所に全てのツイート数を変数にして返す
+        return fakeDate.count //この箇所に全てのツイート数を変数にして返す・現時点ではダミーデータの個数を返す
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
