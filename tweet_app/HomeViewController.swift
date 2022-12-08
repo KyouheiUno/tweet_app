@@ -12,7 +12,6 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     //ダミーデータを定義
-    
     let fakeData = ["ダミーデータその１","ダミーデータその2","ダミーデータその3","ダミーデータその4","ダミーデータその5ダミーデータその5ダミーデータその5",]
     
     override func viewDidLoad() {

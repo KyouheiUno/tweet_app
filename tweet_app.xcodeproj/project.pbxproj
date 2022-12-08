@@ -16,6 +16,7 @@
 		8153A2F129422F1A00A836F9 /* tweet_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8153A2F029422F1A00A836F9 /* tweet_appUITests.swift */; };
 		8153A2F329422F1A00A836F9 /* tweet_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8153A2F229422F1A00A836F9 /* tweet_appUITestsLaunchTests.swift */; };
 		8153A33E29424C8200A836F9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8153A33D29424C8200A836F9 /* HomeViewController.swift */; };
+		8153A3582942864200A836F9 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8153A3572942864200A836F9 /* Tweet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8153A2F029422F1A00A836F9 /* tweet_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tweet_appUITests.swift; sourceTree = "<group>"; };
 		8153A2F229422F1A00A836F9 /* tweet_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tweet_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8153A33D29424C8200A836F9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8153A3572942864200A836F9 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				8153A2DA29422F1A00A836F9 /* LaunchScreen.storyboard */,
 				8153A2DD29422F1A00A836F9 /* Info.plist */,
 				8153A33D29424C8200A836F9 /* HomeViewController.swift */,
+				8153A3572942864200A836F9 /* Tweet.swift */,
 			);
 			path = tweet_app;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				8153A2D029422F1800A836F9 /* AppDelegate.swift in Sources */,
 				8153A2D229422F1800A836F9 /* SceneDelegate.swift in Sources */,
 				8153A33E29424C8200A836F9 /* HomeViewController.swift in Sources */,
+				8153A3582942864200A836F9 /* Tweet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
