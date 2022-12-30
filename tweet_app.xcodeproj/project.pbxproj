@@ -18,6 +18,8 @@
 		8153A33E29424C8200A836F9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8153A33D29424C8200A836F9 /* HomeViewController.swift */; };
 		8153A3A5294D5D9300A836F9 /* TweetViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8153A3A3294D5D9300A836F9 /* TweetViewCell.swift */; };
 		8153A3A6294D5D9300A836F9 /* TweetViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8153A3A4294D5D9300A836F9 /* TweetViewCell.xib */; };
+		8153A3BC295F8D5D00A836F9 /* NewTweetViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8153A3BB295F8D5D00A836F9 /* NewTweetViewController.storyboard */; };
+		8153A3BE295F8D8D00A836F9 /* NewTweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8153A3BD295F8D8D00A836F9 /* NewTweetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		8153A33D29424C8200A836F9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8153A3A3294D5D9300A836F9 /* TweetViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewCell.swift; sourceTree = "<group>"; };
 		8153A3A4294D5D9300A836F9 /* TweetViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetViewCell.xib; sourceTree = "<group>"; };
+		8153A3BB295F8D5D00A836F9 /* NewTweetViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewTweetViewController.storyboard; sourceTree = "<group>"; };
+		8153A3BD295F8D8D00A836F9 /* NewTweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				8153A2D529422F1800A836F9 /* Main.storyboard */,
 				8153A2D829422F1A00A836F9 /* Assets.xcassets */,
 				8153A2DA29422F1A00A836F9 /* LaunchScreen.storyboard */,
+				8153A3BB295F8D5D00A836F9 /* NewTweetViewController.storyboard */,
+				8153A3BD295F8D8D00A836F9 /* NewTweetViewController.swift */,
 				8153A2DD29422F1A00A836F9 /* Info.plist */,
 				8153A33D29424C8200A836F9 /* HomeViewController.swift */,
 				8153A3A3294D5D9300A836F9 /* TweetViewCell.swift */,
@@ -237,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8153A3BC295F8D5D00A836F9 /* NewTweetViewController.storyboard in Resources */,
 				8153A2DC29422F1A00A836F9 /* LaunchScreen.storyboard in Resources */,
 				8153A2D929422F1A00A836F9 /* Assets.xcassets in Resources */,
 				8153A3A6294D5D9300A836F9 /* TweetViewCell.xib in Resources */,
@@ -269,6 +276,7 @@
 				8153A2D229422F1800A836F9 /* SceneDelegate.swift in Sources */,
 				8153A3A5294D5D9300A836F9 /* TweetViewCell.swift in Sources */,
 				8153A33E29424C8200A836F9 /* HomeViewController.swift in Sources */,
+				8153A3BE295F8D8D00A836F9 /* NewTweetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

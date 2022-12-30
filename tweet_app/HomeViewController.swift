@@ -8,8 +8,13 @@
 import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBAction func addTweetButton(_ sender: UIButton) {
+        moveToNewTweetView()
+    }
     @IBOutlet weak var addTweetButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +28,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     //新規ツイート画面への遷移ボタンの構成
     func addConfigureTweetButton() {
         addTweetButton.layer.cornerRadius = addTweetButton.bounds.width * 0.1
+    }
+    
+    //新規ツイート画面への遷移
+    func moveToNewTweetView() {
+        let storybord = UIStoryboard(name: "NewTweetViewController", bundle: nil )
+        guard let newTweetViewController = storybord.instantiateInitialViewController() as? NewTweetViewController else { return }
+        present(newTweetViewController, animated: true)
     }
     
     //セルの高さを調整
