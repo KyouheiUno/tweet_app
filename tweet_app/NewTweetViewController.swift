@@ -25,6 +25,12 @@ class NewTweetViewController: UIViewController {
         super.viewDidLoad()
         addConfigureButton()
         addConfigureTextFiled()
+        setDoneButton()
+    }
+    
+    //キーボード以外の箇所を押下でキーボードを閉じる処理
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
     
     //各種テキストフィールドの構成
@@ -37,5 +43,21 @@ class NewTweetViewController: UIViewController {
     func addConfigureButton() {
         userNameFiled.layer.cornerRadius = userNameFiled.bounds.width * 0.1
         backHomeButton.layer.cornerRadius = backHomeButton.bounds.width * 0.1
+    }
+    
+    //キーボードを閉じる処理
+    @objc func tapDoneButton() {
+        view.endEditing(true)
+    }
+    
+    //ツールバーにキーボードを閉じる処理を追加
+    func setDoneButton() {
+        let toolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
+        toolBar.barStyle = UIBarStyle.black
+        toolBar.sizeToFit()
+        let commitButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(tapDoneButton))
+        toolBar.items = [commitButton]
+        userNameFiled.inputAccessoryView = toolBar
+        tweetFiled.inputAccessoryView = toolBar
     }
 }
