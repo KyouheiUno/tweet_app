@@ -8,6 +8,7 @@
 import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var addTweetButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -16,6 +17,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         //xibファイルを登録する
         tableView.register(UINib(nibName: "TweetViewCell", bundle: nil), forCellReuseIdentifier: "customTweetCell")
         configureTableView()
+        addConfigureTweetButton() //新規ツイートボタンの
+    }
+    
+    //新規ツイート画面への遷移ボタンの構成
+    func addConfigureTweetButton() {
+        addTweetButton.layer.cornerRadius = addTweetButton.bounds.width * 0.1
     }
     
     //セルの高さを調整
