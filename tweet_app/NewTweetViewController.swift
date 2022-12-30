@@ -18,7 +18,7 @@ class NewTweetViewController: UIViewController {
         //ツイートボタン押下時の処理のメソッドの記入をする
     }
     @IBAction func backHomeButton(_ sender: UIButton) {
-        //ホーム画面へ戻るボタンの処理のメソッドを記入する
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
