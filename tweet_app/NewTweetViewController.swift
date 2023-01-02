@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class NewTweetViewController: UIViewController {
     
@@ -15,11 +16,15 @@ class NewTweetViewController: UIViewController {
     @IBOutlet weak var backHomeButton: UIButton!
     
     @IBAction func createTweetButton(_ sender: UIButton) {
-        //ツイートボタン押下時の処理のメソッドの記入をする
+        saveTweetData()
+        self.dismiss(animated: true, completion: nil)
     }
     @IBAction func backHomeButton(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    //ツイートデータモデルをインスタンス化
+    var tweetData = TweetDataModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,5 +64,15 @@ class NewTweetViewController: UIViewController {
         toolBar.items = [commitButton]
         userNameFiled.inputAccessoryView = toolBar
         tweetFiled.inputAccessoryView = toolBar
+    }
+    
+    //ユーザーネームとツイート本文を保存するメソッド
+    func saveTweetData() {
+        let realm = try! Realm()
+        try! realm.write {
+            tweetData.userName = userNameFiled.text!
+            tweetData.tweetText = tweetFiled.text!
+            realm.add(tweetData)
+        }
     }
 }
